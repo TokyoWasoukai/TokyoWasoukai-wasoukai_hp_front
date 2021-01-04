@@ -3,10 +3,10 @@
     <footer class="footer">
       <div class="SNS-wrap">
         <ul>
-          <li class="Twitter" @click="router.push('https://twitter.com/wasoukai')"><img src="../assets/Twitter.png" alt=""></li>
-          <li class="Instagram" @click="router.push('https://www.instagram.com/p/B_9Se9dAPjc/')"><img src="../assets/Instagram.png" alt=""></li>
-          <li class="Gmail" @click="router.push('mailto:tokyo.wasoukai2020@gmail.com')"><img src="../assets/Gmail.png" alt=""></li>
-          <li class="Line" @click="router.push('https://t.co/2py3rqZDe7?amp=1')"><img src="../assets/Line.png" alt=""></li>
+          <li class="Twitter" @click="$router.push('https://twitter.com/wasoukai')"><img src="../assets/Twitter.png" alt=""></li>
+          <li class="Instagram" @click="$router.push('https://www.instagram.com/p/B_9Se9dAPjc/')"><img src="../assets/Instagram.png" alt=""></li>
+          <li class="Gmail" @click="$router.push('mailto:tokyo.wasoukai2020@gmail.com')"><img src="../assets/Gmail.png" alt=""></li>
+          <li class="Line" @click="$router.push('https://t.co/2py3rqZDe7?amp=1')"><img src="../assets/Line.png" alt=""></li>
         </ul>
       </div>
       <div class="copyright">
@@ -34,9 +34,10 @@
   display: flex;
   justify-content: center;
 }
-.SNS-wrap li a img {
+.SNS-wrap li img {
   height: 50%;
   padding-top: 15%;
+  cursor: pointer;
 }
 .copyright p {
   font-family: "UD Digi Kyokasho NP-R";
@@ -48,7 +49,7 @@
   .footer {
     border-top: 5px solid #9B003F;
   }
-  .SNS-wrap li a img {
+  .SNS-wrap li img {
     height: 15vw;
     padding-top: 15%;
   }

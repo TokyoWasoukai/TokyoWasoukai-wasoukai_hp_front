@@ -3,14 +3,14 @@
     <header class="header">
       <div class="header-wrap">
         <div class="header-logo">
-          <div @click="router.push('../views/Home.vue')"><img src="../assets/wasoukai-logo.png" alt=""></div>
+          <div @click="$router.push('./home')"><img src="../assets/wasoukai-logo.png" alt=""></div>
         </div>
       <nav class="header-nav">
         <ul>
-          <li @click="router.push('../views/About.vue')"><img src="../assets/和蒼会について.png" alt="">和蒼会について</li>
-          <li @click="router.push('../views/Activty.vue')"><img src="../assets/活動内容.png" alt="">活動内容</li>
-          <li @click="('../views/Faq')"><img src="../assets/よくある質問.png" alt="">よくある質問</li>
-          <li @click="router.push('../views/Contact.vue')"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</li>
+          <li @click="$router.push('/about')"><img src="../assets/和蒼会について.png" alt="">和蒼会について</li>
+          <li @click="$router.push('./acivty')"><img src="../assets/活動内容.png" alt="">活動内容</li>
+          <li @click="('./Faq')"><img src="../assets/よくある質問.png" alt="">よくある質問</li>
+          <li @click="$router.push('./contact')"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</li>
         </ul>
       </nav>
       </div>
@@ -25,10 +25,10 @@
     <transition name="hamburger_menu">
     <div class="hamburger_menu" v-show="ActiveBtn">
         <ul>
-          <li class="about" @click="router.push('../views/About')">和蒼会について</li>
-          <li class="activty" @click="router.push('../views/Activty')">活動内容</li>
-          <li class="faq" @click="router.link('../views/Faq')">よくある質問</li>
-          <li class="contact" @click="router.push('../views/Contact')">お問い合わせ</li>
+          <li class="about" @click="$router.push('./About')">和蒼会について</li>
+          <li class="activty" @click="$router.push('./Activty')">活動内容</li>
+          <li class="faq" @click="$router.link('./Faq')">よくある質問</li>
+          <li class="contact" @click="$router.push('./Contact')">お問い合わせ</li>
         </ul>
       </div>
     </transition>
@@ -63,10 +63,10 @@ export default {
   align-items: center;
 }
 
-.header-logo a img {
+.header-logo {
   position: absolute;
   height: 100px;
-  bottom: 0;
+  bottom: 30px;
 }
 
 .header-nav {
@@ -77,7 +77,7 @@ export default {
   border-bottom: 8px solid #9B003F;
 }
 
-.header-nav a img {
+.header-nav img {
   height: 45%;
   display: block;
   margin-top: 15%;
@@ -95,7 +95,7 @@ export default {
   font-family: "UD Digi Kyokasho NP-R";
 }
 
-.header-nav a {
+.header-nav {
   color: #000;
   text-decoration: none;
 }
@@ -109,10 +109,11 @@ export default {
     top: 0;
     z-index: 20;
   }
-  .header-logo a img {
+  .header-logo img {
     position: absolute;
     height: 15vw;
-    top: 3vw;
+    cursor: pointer;
+    top: 2vw;  
   }
   .header-nav {
     display: none;
@@ -195,8 +196,9 @@ export default {
   .hamburger_menu li {
     list-style: none;
     padding: 5vw;
+    cursor: pointer;
   }
-  .hamburger_menu a {
+  .hamburger_menu {
     text-decoration: none;
     font-family: "beautiful font";
     font-weight: bold;
