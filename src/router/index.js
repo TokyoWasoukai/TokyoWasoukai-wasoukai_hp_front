@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Activty from '../views/Activty.vue';
-import FAQ from '../views/FAQ.vue';
+import Faq from '../views/Faq.vue';
 import Contact from '../views/Contact.vue';
 
 Vue.use(VueRouter)
@@ -22,8 +22,8 @@ const routes = [{
     component: Activty,
   }, {
     path: '/faq',
-    name: 'FAQ',
-    component: FAQ,
+    name: 'Faq',
+    component: Faq,
   }, {
     path: '/contact',
     name: 'Contact',

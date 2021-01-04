@@ -3,14 +3,14 @@
     <header class="header">
       <div class="header-wrap">
         <div class="header-logo">
-          <a href="../views/Home.vue"><img src="../assets/wasoukai-logo.png" alt=""></a>
+          <div @click="router.push('../views/Home.vue')"><img src="../assets/wasoukai-logo.png" alt=""></div>
         </div>
       <nav class="header-nav">
         <ul>
-          <li><a href="../views/About.vue"><img src="../assets/和蒼会について.png" alt="">和蒼会について</a></li>
-          <li><a href="../views/Activty.vue"><img src="../assets/活動内容.png" alt="">活動内容</a></li>
-          <li><a href="../views/FAQ.vue"><img src="../assets/よくある質問.png" alt="">よくある質問</a></li>
-          <li><a href="../views/Contact.vue"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</a></li>
+          <li @click="router.push('../views/About.vue')"><img src="../assets/和蒼会について.png" alt="">和蒼会について</li>
+          <li @click="router.push('../views/Activty.vue')"><img src="../assets/活動内容.png" alt="">活動内容</li>
+          <li @click="('../views/Faq')"><img src="../assets/よくある質問.png" alt="">よくある質問</li>
+          <li @click="router.push('../views/Contact.vue')"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</li>
         </ul>
       </nav>
       </div>
@@ -25,10 +25,10 @@
     <transition name="hamburger_menu">
     <div class="hamburger_menu" v-show="ActiveBtn">
         <ul>
-          <li class="about"><a href="../views/About.vue">和蒼会について</a></li>
-          <li class="activty"><a href="../views/Activty.vue">活動内容</a></li>
-          <li class="faq"><a href="../views/FAQ.vue">よくある質問</a></li>
-          <li class="contact"><a href="../views/Contact.vue">お問い合わせ</a></li>
+          <li class="about" @click="router.push('../views/About')">和蒼会について</li>
+          <li class="activty" @click="router.push('../views/Activty')">活動内容</li>
+          <li class="faq" @click="router.link('../views/Faq')">よくある質問</li>
+          <li class="contact" @click="router.push('../views/Contact')">お問い合わせ</li>
         </ul>
       </div>
     </transition>

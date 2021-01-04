@@ -3,10 +3,10 @@
     <footer class="footer">
       <div class="SNS-wrap">
         <ul>
-          <li class="Twitter"><a href="https://twitter.com/wasoukai"><img src="../assets/Twitter.png" alt=""></a></li>
-          <li class="Instagram"><a href="https://www.instagram.com/p/B_9Se9dAPjc/"><img src="../assets/Instagram.png" alt=""></a></li>
-          <li class="Gmail"><a href="mailto:tokyo.wasoukai2020@gmail.com"><img src="../assets/Gmail.png" alt=""></a></li>
-          <li class="Line"><a href="https://t.co/2py3rqZDe7?amp=1"><img src="../assets/Line.png" alt=""></a></li>
+          <li class="Twitter" @click="router.push('https://twitter.com/wasoukai')"><img src="../assets/Twitter.png" alt=""></li>
+          <li class="Instagram" @click="router.push('https://www.instagram.com/p/B_9Se9dAPjc/')"><img src="../assets/Instagram.png" alt=""></li>
+          <li class="Gmail" @click="router.push('mailto:tokyo.wasoukai2020@gmail.com')"><img src="../assets/Gmail.png" alt=""></li>
+          <li class="Line" @click="router.push('https://t.co/2py3rqZDe7?amp=1')"><img src="../assets/Line.png" alt=""></li>
         </ul>
       </div>
       <div class="copyright">
