@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <div class="contents">
+    <div class="main">
       <div class="title">
         <img src="../assets/和蒼会について.png" alt="">
         <h1>和蒼会について</h1>

@@ -3,14 +3,14 @@
     <header class="header">
       <div class="header-wrap">
         <div class="header-logo">
-          <div @click="$router.push('./home')"><img src="../assets/wasoukai-logo.png" alt=""></div>
+          <div @click="$router.push({ name: 'Home' })"><img src="../assets/wasoukai-logo.png" alt=""></div>
         </div>
       <nav class="header-nav">
         <ul>
-          <li @click="$router.push('/about')"><img src="../assets/和蒼会について.png" alt="">和蒼会について</li>
-          <li @click="$router.push('./acivty')"><img src="../assets/活動内容.png" alt="">活動内容</li>
-          <li @click="('./Faq')"><img src="../assets/よくある質問.png" alt="">よくある質問</li>
-          <li @click="$router.push('./contact')"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</li>
+          <li @click="$router.push({ name: 'About' })"><img src="../assets/和蒼会について.png" alt="">和蒼会について</li>
+          <li @click="$router.push({ name: 'Activty' })"><img src="../assets/活動内容.png" alt="">活動内容</li>
+          <li @click="({ name: 'Faq' })"><img src="../assets/よくある質問.png" alt="">よくある質問</li>
+          <li @click="$router.push({ name: 'Contact' })"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</li>
         </ul>
       </nav>
       </div>
@@ -25,10 +25,10 @@
     <transition name="hamburger_menu">
     <div class="hamburger_menu" v-show="ActiveBtn">
         <ul>
-          <li class="about" @click="$router.push('./About')">和蒼会について</li>
-          <li class="activty" @click="$router.push('./Activty')">活動内容</li>
-          <li class="faq" @click="$router.link('./Faq')">よくある質問</li>
-          <li class="contact" @click="$router.push('./Contact')">お問い合わせ</li>
+          <li class="about" @click="$router.push({ name: 'About' })">和蒼会について</li>
+          <li class="activty" @click="$router.push({ name: 'Activty' })">活動内容</li>
+          <li class="faq" @click="$router.link({ name: 'Faq' })">よくある質問</li>
+          <li class="contact" @click="$router.push({ name: 'Contact' })">お問い合わせ</li>
         </ul>
       </div>
     </transition>
