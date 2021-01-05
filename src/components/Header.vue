@@ -27,7 +27,7 @@
         <ul>
           <li class="about" @click="$router.push({ name: 'About' })">和蒼会について</li>
           <li class="activty" @click="$router.push({ name: 'Activty' })">活動内容</li>
-          <li class="faq" @click="$router.link({ name: 'Faq' })">よくある質問</li>
+          <li class="faq" @click="$router.push({ name: 'Faq' })">よくある質問</li>
           <li class="contact" @click="$router.push({ name: 'Contact' })">お問い合わせ</li>
         </ul>
       </div>
