@@ -54,6 +54,7 @@ export default {
 .header {
   height: 125px;
   width: 100%;
+  background: #ffffff;
   position: fixed;
 }
 
@@ -63,7 +64,7 @@ export default {
   align-items: center;
 }
 
-.header-logo {
+.header-logo img {
   position: absolute;
   height: 100px;
   bottom: 30px;
@@ -111,9 +112,10 @@ export default {
   }
   .header-logo img {
     position: absolute;
+    width: 20w;
     height: 15vw;
+    bottom: 3vw;
     cursor: pointer;
-    top: 2vw;  
   }
   .header-nav {
     display: none;

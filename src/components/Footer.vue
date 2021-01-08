@@ -33,6 +33,7 @@
 .SNS-wrap ul {
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 .SNS-wrap li img {
   height: 50%;
