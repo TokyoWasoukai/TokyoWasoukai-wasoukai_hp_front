@@ -6,7 +6,7 @@
         <div id="eyecatch">
           <h1 class="catchcopy1">着物だって、
           </h1>
-
+          
           <h1 class="catchcopy2"> 服でしょ？</h1>          
         </div>
         <div id="about">
@@ -97,16 +97,20 @@ export default {
 
 <style scoped>
 #main {
-  width: 100%;
-  padding-top: 125px;
-  border: 10px solid #96d1a9;
-  border-image: url(../assets/雪輪枠.png) round;
+  border: solid 100px;
+  border-image: url(../assets/雪輪枠.png) 30 round;
+  margin-bottom: 125px;
+}
+#eyecatch {
+  display: flex;
+  justify-content: space-between;
 }
 #eyecatch h1 {
   writing-mode: vertical-lr;
   font-family: "beautiful font";
   font-size: 5rem;
-  display: inline;
+  margin: 140px;
+  margin-bottom: 0;
 }
 #about {
   text-align: center;
@@ -116,6 +120,7 @@ export default {
   font-family: "beautiful font";
   font-size: 4rem;
   margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 #about p {
   font-family: "UD Digi Kyokasho NP-R";
@@ -143,6 +148,7 @@ export default {
   font-size: 4rem;
   text-align: center;
   margin-bottom: 5rem;
+  margin-top: 5rem;
 }
 #activty p {
   font-family: "UD Digi Kyokasho NP-R";
@@ -167,11 +173,13 @@ export default {
   font-size: 4rem;
   margin-bottom: 5rem;
   text-align: center;
+  margin-top: 5rem;
 }
 #faq p {
   font-family: "UD Digi Kyokasho NP-R";
   font-size: 2rem;
   margin-left: 15%;
+  margin-right: 20%;
 }
 #faq button {
   font-family: "UD Digi Kyokasho NP-R";
@@ -192,6 +200,7 @@ export default {
   font-family: "beautiful font";
   font-size: 4rem;
   text-align: center;
+  margin-top: 5rem;
 }
 #contact .box {
   background: #E5E5E5;
@@ -202,6 +211,7 @@ export default {
   display: inline-block;
   text-align: center;
   margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 #contact label {
@@ -241,15 +251,20 @@ export default {
 @media screen and (max-width: 768px) {
 
   #main {
-    padding-top: 25vw;
+    border: solid 10vw;
+    border-image: url(../assets/雪輪枠.png) 30 round;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
   }
   #eyecatch h1 {
     font-size: 10vw;
+    margin-top: 5vw;
   }
   #about h2 {
     font-size: 7vw;
     text-decoration: underline #9B003F 0.5vw;
     margin-bottom: 5vw;
+    margin-top: 5vw;
   }
   #about p {
     font-size: 3vw;
@@ -266,6 +281,7 @@ export default {
     font-size: 7vw;
     text-decoration: underline #9B003F 0.5vw;
     margin-bottom: 5vw;
+    margin-top: 5vw;
   }
   #activty p {
     font-size: 3vw;
@@ -282,9 +298,11 @@ export default {
     font-size: 7vw;
     text-decoration: underline #9B003F 0.5vw;
     margin-bottom: 5vw;
+    margin-top: 5vw;
   }
   #faq p {
     font-size: 3vw;
+    margin-right: 10%;
   }
   #faq button {
     font-size: 3vw;
@@ -297,6 +315,7 @@ export default {
     font-size: 7vw;
     text-decoration: underline #9B003F 0.5vw;
     margin-bottom: 5vw;
+    margin-top: 5vw;
   }
   #contact .box {
     background: #E5E5E5;
@@ -307,6 +326,7 @@ export default {
     display: inline-block;
     text-align: center;
     margin-top: 5vw;
+    margin-bottom: 10vw;
   }
   #contact label {
     font-family: "UD Digi Kyokasho NP-R";
