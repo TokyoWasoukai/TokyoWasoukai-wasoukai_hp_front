@@ -7,10 +7,10 @@
         </div>
       <nav class="header-nav">
         <ul>
-          <li @click="$router.push({ name: 'About' })"><img src="../assets/和蒼会について.png" alt="">和蒼会について</li>
-          <li @click="$router.push({ name: 'Activty' })"><img src="../assets/活動内容.png" alt="">活動内容</li>
-          <li @click="({ name: 'Faq' })"><img src="../assets/よくある質問.png" alt="">よくある質問</li>
-          <li @click="$router.push({ name: 'Contact' })"><img src="../assets/お問い合わせ.png" alt="">お問い合わせ</li>
+          <li @click="$router.push({ name: 'About' })"><img src="../assets/和蒼会について.png" alt=""><p>和蒼会について</p></li>
+          <li @click="$router.push({ name: 'Activty' })"><img src="../assets/活動内容.png" alt=""><p>活動内容</p></li>
+          <li @click="({ name: 'Faq' })"><img src="../assets/よくある質問.png" alt=""><p>よくある質問</p></li>
+          <li @click="$router.push({ name: 'Contact' })"><img src="../assets/お問い合わせ.png" alt=""><p>お問い合わせ</p></li>
         </ul>
       </nav>
       </div>
@@ -82,9 +82,13 @@ export default {
   height: 45%;
   display: block;
   margin-top: 15%;
-
+  margin-right: auto;
+  margin-left: auto;
 }
 
+.header-nav li p {
+  text-align: center;
+}
 .header-nav ul {
   display: flex;
   justify-content: space-between;

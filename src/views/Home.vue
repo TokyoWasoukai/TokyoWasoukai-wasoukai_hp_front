@@ -97,147 +97,250 @@ export default {
 
 <style scoped>
 #main {
-  padding-top: 100vw;
   width: 100%;
-  padding: 150px 5vw;
-  background: url(../assets/雪輪枠.png) repeat;
-}
-.wrap {
-  padding: 10vw;
-  background: #ffffff;
+  padding-top: 125px;
+  border: 10px solid #96d1a9;
+  border-image: url(../assets/雪輪枠.png) round;
 }
 #eyecatch h1 {
   writing-mode: vertical-lr;
   font-family: "beautiful font";
-  font-size: 5vw;
+  font-size: 5rem;
   display: inline;
 }
-#about h2 {
-  text-decoration: underline #9B003F 0.5vw;
-  font-family: "beautiful font";
-  font-size: 4vw;
+#about {
   text-align: center;
+}
+#about h2 {
+  text-decoration: underline #9B003F 0.5rem;
+  font-family: "beautiful font";
+  font-size: 4rem;
+  margin-bottom: 5rem;
 }
 #about p {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
-  display: inline-block;
-  text-align: center;
+  font-size: 2rem;
+  display: inline;
 }
 #about button {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
+  font-size: 2rem;
   background: #007655;
   color: #ffffff;
   border-style: none;
-  padding: 1vw 2vw;
-  border-radius: 1.5vw;
-  left: 10%;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  margin-left: 80%;
+  margin-top: 5rem;
+  
+}
+#activty {
+  text-align: center;
 }
 #activty h2 {
-  text-decoration: underline #9B003F 0.5vw;
+  text-decoration: underline #9B003F 0.5rem;
   font-family: "beautiful font";
-  font-size: 4vw;
+  font-size: 4rem;
   text-align: center;
+  margin-bottom: 5rem;
 }
 #activty p {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
-  display: inline-block;
-  text-align: center;
+  font-size: 2rem;
+  display: inline;
 }
 #activty button {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
+  font-size: 2rem;
   background: #007655;
   color: #ffffff;
   border-style: none;
-  padding: 1vw 2vw;
-  border-radius: 1.5vw;
-  left: 10%;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  margin-left: 80%;
+  margin-top: 5rem;
 }
+
 #faq h2 {
-  text-decoration: underline #9B003F 0.5vw;
+  text-decoration: underline #9B003F 0.5rem;
   font-family: "beautiful font";
-  font-size: 4vw;
+  font-size: 4rem;
+  margin-bottom: 5rem;
   text-align: center;
 }
 #faq p {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
-  display: inline-block;
-  text-align: center;
+  font-size: 2rem;
+  margin-left: 15%;
 }
 #faq button {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
+  font-size: 2rem;
   background: #007655;
   color: #ffffff;
   border-style: none;
-  padding: 1vw 2vw;
-  border-radius: 1.5vw;
-  left: 10%;
+  padding: 1.5rem 3rem;
+  border-radius: 2rem;
+  margin-left: 80%;
+  margin-top: 5rem;
 }
 #contact {
   text-align: center;
 }
 #contact h2 {
-  text-decoration: underline #9B003F 0.5vw;
+  text-decoration: underline #9B003F 0.5rem;
   font-family: "beautiful font";
-  font-size: 4vw;
+  font-size: 4rem;
   text-align: center;
 }
 #contact .box {
   background: #E5E5E5;
   width: 50%;
-  height: 50vw;
+  height: 50rem;
   border: solid  #007655 ;
-  border-radius: 3vw;
+  border-radius: 3rem;
   display: inline-block;
   text-align: center;
-  margin-top: 5vw;
+  margin-top: 5rem;
 }
 
 #contact label {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
+  font-size: 2rem;
   display: block;
   text-align: left;
   margin-left: 15%;
-  margin-top: 2vw;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
 }
 #contact input {
   width: 70%;
-  height: 2vw;
+  height: 3rem;
   border-style: none;
-  border-radius: 0.5vw;
+  border-radius: 0.5rem;
   margin: 0 auto;
 }
 #contact textarea {
   width: 70%;
-  height: 20vw;
+  height: 20rem;
   border-style: none;
-  border-radius: 1vw;
+  border-radius: 1rem;
   margin: 0 auto;
 }
 #contact button {
   font-family: "UD Digi Kyokasho NP-R";
-  font-size: 2vw;
+  font-size: 2rem;
   background: #007655;
   color: #ffffff;
   border-style: none;
-  padding: 1vw 2vw;
-  border-radius: 1.5vw;
+  padding: 1rem 2rem;
+  border-radius: 1.5rem;
   left: 10%;
-  margin-top: 2vw;
+  margin-top: 2rem;
 }
 @media screen and (max-width: 768px) {
 
   #main {
     padding-top: 25vw;
   }
-  #eyecacth h1 {
+  #eyecatch h1 {
     font-size: 10vw;
+  }
+  #about h2 {
+    font-size: 7vw;
+    text-decoration: underline #9B003F 0.5vw;
+    margin-bottom: 5vw;
+  }
+  #about p {
+    font-size: 3vw;
+    display: block;
+  }
+  #about button {
+    font-size: 3vw;
+    padding: 2vw 4vw;
+    border-radius: 3vw;
+    margin-left: 60%;
+    margin-top: 5vw;
+  }
+  #activty h2 {
+    font-size: 7vw;
+    text-decoration: underline #9B003F 0.5vw;
+    margin-bottom: 5vw;
+  }
+  #activty p {
+    font-size: 3vw;
+    display: block;
+  }
+  #activty button {
+    font-size: 3vw;
+    padding: 2vw 4vw;
+    border-radius: 3vw;
+    margin-left: 60%;
+    margin-top: 5vw;
+  }
+  #faq h2 {
+    font-size: 7vw;
+    text-decoration: underline #9B003F 0.5vw;
+    margin-bottom: 5vw;
+  }
+  #faq p {
+    font-size: 3vw;
+  }
+  #faq button {
+    font-size: 3vw;
+    padding: 2vw 4vw;
+    border-radius: 3vw;
+    margin-left: 60%;
+    margin-top: 5vw;
+  }
+  #contact h2 {
+    font-size: 7vw;
+    text-decoration: underline #9B003F 0.5vw;
+    margin-bottom: 5vw;
+  }
+  #contact .box {
+    background: #E5E5E5;
+    width: 70%;
+    height: 60vw;
+    border: solid  #007655 ;
+    border-radius: 3vw;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5vw;
+  }
+  #contact label {
+    font-family: "UD Digi Kyokasho NP-R";
+    font-size: 3vw;
+    display: block;
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 3vw;
+    margin-bottom: 0.5vw;
+}
+  #contact input {
+    width: 70%;
+    height: 4vw;
+    border-style: none;
+    border-radius: 0.5vw;
+    margin: 0 auto;
+  }
+  #contact textarea {
+    width: 70%;
+    height: 20vw;
+    border-style: none;
+    border-radius: 1vw;
+    margin: 0 auto;
+  }
+  #contact button {
+    font-family: "UD Digi Kyokasho NP-R";
+    font-size: 2vw;
+    background: #007655;
+    color: #ffffff;
+    border-style: none;
+    padding: 1vw 2vw;
+    border-radius: 1.5vw;
+    left: 10%;
+    margin-top: 3vw;
   }
 }
 </style>
