@@ -199,6 +199,8 @@ export default {
     list-style: none;
     padding: 5vw;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
   }
   .hamburger_menu {
     text-decoration: none;

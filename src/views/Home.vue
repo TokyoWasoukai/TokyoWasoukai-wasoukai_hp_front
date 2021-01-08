@@ -33,20 +33,22 @@
         <div id="contact">
           <h2>お問い合わせ</h2>
           <form class="form" method="post" @submit.prevent="sendContact()">
-            <div class="contact">
-              <label for="name">お名前</label>
-              <input type="text" id="name" name="user_name" v-model="text" />
-            </div>
-            <div>
-              <label for="mail">返信用メールアドレス</label>
-              <input type="email" id="mail" name="user_mail" v-model="email" />
-            </div>
-            <div>
-              <label for="msg">お問い合わせ内容</label>
-              <textarea id="msg" name="user_message" v-model="msg"></textarea>
-            </div>
-            <div class="button-submit">
-              <button class="button" type="submit">送信</button>
+            <div class="box">
+              <div>
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="user_name" v-model="text" />
+              </div>
+              <div>
+                <label for="mail">返信用メールアドレス</label>
+                <input type="email" id="mail" name="user_mail" v-model="email" />
+              </div>
+              <div>
+                <label for="msg">お問い合わせ内容</label>
+                <textarea id="msg" name="user_message" v-model="msg"></textarea>
+              </div>
+              <div class="button-submit">
+                <button class="button" type="submit">送信</button>
+              </div>
             </div>
           </form>
         </div>
@@ -105,9 +107,10 @@ export default {
   background: #ffffff;
 }
 #eyecatch h1 {
-  writing-mode: vertical-rl;
+  writing-mode: vertical-lr;
   font-family: "beautiful font";
   font-size: 5vw;
+  display: inline;
 }
 #about h2 {
   text-decoration: underline #9B003F 0.5vw;
@@ -175,11 +178,66 @@ export default {
   border-radius: 1.5vw;
   left: 10%;
 }
+#contact {
+  text-align: center;
+}
+#contact h2 {
+  text-decoration: underline #9B003F 0.5vw;
+  font-family: "beautiful font";
+  font-size: 4vw;
+  text-align: center;
+}
+#contact .box {
+  background: #E5E5E5;
+  width: 50%;
+  height: 50vw;
+  border: solid  #007655 ;
+  border-radius: 3vw;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5vw;
+}
+
+#contact label {
+  font-family: "UD Digi Kyokasho NP-R";
+  font-size: 2vw;
+  display: block;
+  text-align: left;
+  margin-left: 15%;
+  margin-top: 2vw;
+}
+#contact input {
+  width: 70%;
+  height: 2vw;
+  border-style: none;
+  border-radius: 0.5vw;
+  margin: 0 auto;
+}
+#contact textarea {
+  width: 70%;
+  height: 20vw;
+  border-style: none;
+  border-radius: 1vw;
+  margin: 0 auto;
+}
+#contact button {
+  font-family: "UD Digi Kyokasho NP-R";
+  font-size: 2vw;
+  background: #007655;
+  color: #ffffff;
+  border-style: none;
+  padding: 1vw 2vw;
+  border-radius: 1.5vw;
+  left: 10%;
+  margin-top: 2vw;
+}
 @media screen and (max-width: 768px) {
 
   #main {
     padding-top: 25vw;
   }
-
+  #eyecacth h1 {
+    font-size: 10vw;
+  }
 }
 </style>
