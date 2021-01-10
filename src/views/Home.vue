@@ -2,56 +2,68 @@
   <div>
     <Header />
     <div id="main">
-      <div class="wrap">
-        <div id="eyecatch">
-          <h1 class="catchcopy1">着物だって、
-          </h1>
-          
-          <h1 class="catchcopy2"> 服でしょ？</h1>          
-        </div>
-        <div id="about">
-          <h2>和蒼会について</h2>
-          <p>東京和蒼会とは、着物が好きな学生が</p>
-          <p>交流することを目的としたサークルです</p>
-          <button @click="$router.push({ name: 'About' })">すべて見る</button>
-        </div> 
-        <div id="activty">
-          <h2>活動内容</h2>
-          <p>関東（東京）を中心に</p>
-          <p>月に2～3回お出かけ企画や着付け教室を</p>
-          <p>行っています</p>
-          <button @click="$router.push({ name: 'Activty' })">すべて見る</button>
-        </div>
-        <div id="faq">
-          <h2>よくある質問</h2>
-          <p class="Q1">Q. 初心者で着物を持っていないのですが、大丈夫ですか？</p>
-          <p class="A1">A.大丈夫です。入会してから、活動の買い物ツアーで買いそろえる方も多いです。着付け練習会もあるので、着付けができなくてもかまいません。</p>
-          <p class="Q2">Q. 毎回着物を着ていかなくてはいけませんか？</p>
-          <p class="A2">A. 着物でなくてもかまいません。洋服や和服や和洋折衷コーデなど、何を着るかは個人の自由です。</p>
-          <button @click="$router.push({ name: 'Faq' })">すべて見る</button>
-        </div>
-        <div id="contact">
-          <h2>お問い合わせ</h2>
-          <form class="form" method="post" @submit.prevent="sendContact()">
-            <div class="box">
-              <div>
-                <label for="name">お名前</label>
-                <input type="text" id="name" name="user_name" v-model="text" />
-              </div>
-              <div>
-                <label for="mail">返信用メールアドレス</label>
-                <input type="email" id="mail" name="user_mail" v-model="email" />
-              </div>
-              <div>
-                <label for="msg">お問い合わせ内容</label>
-                <textarea id="msg" name="user_message" v-model="msg"></textarea>
-              </div>
-              <div class="button-submit">
-                <button class="button" type="submit">送信</button>
-              </div>
+      <div id="eyecatch">
+        <h1 class="catchcopy1">服でしょ？
+        </h1>
+          <carousel autoplay="true" loop="true" >
+          <slide>
+            <span class="label1"><img src="../assets/lavel1.JPG" alt="">
+            </span>
+          </slide>
+          <slide>
+            <span class="lavel2"><img src="../assets/lavel2.JPG" alt=""></span>
+          </slide>
+          <slide>
+            <span class="label3"><img src="../assets/lavel3.JPG" alt=""></span>
+          </slide>
+          <slide>
+            <span class="lavel4"><img src="../assets/lavel4.JPG" alt=""></span>
+          </slide>
+  </carousel>
+        <h1 class="catchcopy2"> 着物だって、</h1>          
+      </div>
+      <div id="about">
+        <h2>和蒼会について</h2>
+        <p>東京和蒼会とは、着物が好きな学生が</p>
+        <p>交流することを目的としたサークルです</p>
+        <button @click="$router.push({ name: 'About' })">すべて見る</button>
+      </div> 
+      <div id="activty">
+        <h2>活動内容</h2>
+        <p>関東（東京）を中心に</p>
+        <p>月に2～3回お出かけ企画や着付け教室を</p>
+        <p>行っています</p>
+        <button @click="$router.push({ name: 'Activty' })">すべて見る</button>
+      </div>
+      <div id="faq">
+        <h2>よくある質問</h2>
+        <p class="Q1">Q.  初心者で着物を持っていないのですが、大丈夫ですか？</p>
+        <p class="A1">A.  大丈夫です。入会してから、活動の買い物ツアーで買いそろえる方も多いです。着付け練習会もあるので、着付けができなくてもかまいません。</p>
+        <p class="Q2">Q.  毎回着物を着ていかなくてはいけませんか？</p>
+        <p class="A2">A.  着物でなくてもかまいません。洋服や和服や和洋折衷コーデなど、何を着るかは個人の自由です。</p>
+        <button @click="$router.push({ name: 'Faq' })">すべて見る</button>
+      </div>
+      <div id="contact">
+        <h2>お問い合わせ</h2>
+        <form class="form" method="post" @submit.prevent="sendContact()">
+          <div class="box">
+            <div>
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="user_name" v-model="text" />
             </div>
-          </form>
-        </div>
+            <div>
+              <label for="mail">返信用メールアドレス</label>
+              <input type="email" id="mail" name="user_mail" v-model="email" />
+            </div>
+            <div>
+              <label for="msg">お問い合わせ内容</label>
+              <textarea id="msg" name="user_message" v-model="msg"></textarea>
+            </div>
+            <div class="button-submit">
+              <button class="button" type="submit">送信</button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <Footer />
@@ -61,17 +73,22 @@
 <script>
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
+import { Carousel, Slide } from "vue-carousel";
+const VueCarousel  = window.VueCarousel.default;
+
 export default {
   components: {
     Header,
-    Footer
+    Footer,
+    Carousel,
+    Slide,
   },
   data() {
     return {
       text: "",
       email: "",
       tel: "",
-      msg: ""
+      msg: "",
     };
   },
     //バリデーション
@@ -90,8 +107,8 @@ export default {
         this.msg = "";
         alert("送信しました");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -100,6 +117,7 @@ export default {
   border: solid 100px;
   border-image: url(../assets/雪輪枠.png) 30 round;
   margin-bottom: 125px;
+  margin-top: 125px;
 }
 #eyecatch {
   display: flex;
@@ -135,7 +153,7 @@ export default {
   border-style: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  margin-left: 80%;
+  margin-left: 75%;
   margin-top: 5rem;
   
 }
@@ -149,6 +167,7 @@ export default {
   text-align: center;
   margin-bottom: 5rem;
   margin-top: 5rem;
+  text-align: center;
 }
 #activty p {
   font-family: "UD Digi Kyokasho NP-R";
@@ -163,10 +182,12 @@ export default {
   border-style: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  margin-left: 80%;
+  margin-left: 75%;
   margin-top: 5rem;
 }
-
+#faq {
+  text-align: center;
+}
 #faq h2 {
   text-decoration: underline #9B003F 0.5rem;
   font-family: "beautiful font";
@@ -180,6 +201,11 @@ export default {
   font-size: 2rem;
   margin-left: 15%;
   margin-right: 20%;
+  line-height: 3;
+  text-align-last: left;
+}
+#faq .Q2 {
+  margin-top: 3rem;
 }
 #faq button {
   font-family: "UD Digi Kyokasho NP-R";
@@ -189,7 +215,7 @@ export default {
   border-style: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  margin-left: 80%;
+  margin-left: 75%;
   margin-top: 5rem;
 }
 #contact {
@@ -211,7 +237,7 @@ export default {
   display: inline-block;
   text-align: center;
   margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 #contact label {
@@ -246,19 +272,24 @@ export default {
   padding: 1rem 2rem;
   border-radius: 1.5rem;
   left: 10%;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 768px) {
 
   #main {
     border: solid 10vw;
-    border-image: url(../assets/雪輪枠.png) 30 round;
+    border-image: url(../assets/雪輪枠.png) 50 round;
     margin-top: 20vw;
     margin-bottom: 20vw;
   }
   #eyecatch h1 {
     font-size: 10vw;
     margin-top: 5vw;
+    display: inline;
+    justify-content: center;
+    margin-top: 3vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
   }
   #about h2 {
     font-size: 7vw;
@@ -269,6 +300,7 @@ export default {
   #about p {
     font-size: 3vw;
     display: block;
+    line-height: 1.5;
   }
   #about button {
     font-size: 3vw;
@@ -286,6 +318,7 @@ export default {
   #activty p {
     font-size: 3vw;
     display: block;
+    line-height: 1.5;
   }
   #activty button {
     font-size: 3vw;
@@ -303,6 +336,10 @@ export default {
   #faq p {
     font-size: 3vw;
     margin-right: 10%;
+    line-height: 2;
+  }
+  #faq .Q2 {
+    margin-top: 2vw;
   }
   #faq button {
     font-size: 3vw;
@@ -320,7 +357,7 @@ export default {
   #contact .box {
     background: #E5E5E5;
     width: 70%;
-    height: 60vw;
+    height: 45%;
     border: solid  #007655 ;
     border-radius: 3vw;
     display: inline-block;
@@ -353,14 +390,14 @@ export default {
   }
   #contact button {
     font-family: "UD Digi Kyokasho NP-R";
-    font-size: 2vw;
+    font-size: 3vw;
     background: #007655;
     color: #ffffff;
     border-style: none;
-    padding: 1vw 2vw;
-    border-radius: 1.5vw;
+    padding: 1.5vw 3vw;
+    border-radius: 2vw;
     left: 10%;
-    margin-top: 3vw;
+    margin-bottom: 5%;
   }
 }
 </style>

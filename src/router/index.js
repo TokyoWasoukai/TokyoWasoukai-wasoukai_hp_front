@@ -6,7 +6,7 @@ import Activty from '../views/Activty.vue';
 import Faq from '../views/Faq.vue';
 import Contact from '../views/Contact.vue';
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [{
     path: '/home',
@@ -36,5 +36,6 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
 
 export default router

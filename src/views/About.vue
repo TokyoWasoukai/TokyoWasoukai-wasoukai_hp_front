@@ -1,32 +1,30 @@
 <template>
   <div>
     <Header />
-    <div class="main">
+    <div id="main">
       <div class="title">
         <img src="../assets/和蒼会について.png" alt="">
         <h1>和蒼会について</h1>
       </div>
       <div class="introduction">
-        <p class="purpose">
-          東京和蒼会とは着物が好きな学生が交流することを目的としたサークルです</p>
-        <p class="established">
-          2014年1月6日に設立
-          毎年40～50名が所属しています
-        </p>
-        <p class="student">
-          大学、大学院、専門学校、短大、専門や
-          学年問わず1年中入れます
-        </p>
-        <p class="gender_ratio">
-          男女比は３：７です（2021年現在）
-        </p>
-        <p class="activty">
-          関東（東京）を中心に、
-          月に2～3回お出かけ企画や着付け練習会を行っています
-        </p>
+        <div class="purpose">
+          <p>東京和蒼会とは着物が好きな学生が</p><p>交流することを目的としたサークルです</p>
+        </div>
+        <div class="established">
+          <p>2014年1月6日に設立</p><p>毎年40～50名が所属しています</p>          
+        </div>
+        <div class="student">
+          <p>大学、大学院、専門学校、短大、専門や</p><p>学年問わず1年中入れます</p>
+        </div>
+        <div class="gender_ratio">
+          <p>男女比は３：７です（2021年現在）</p>
+        </div>
+        <div class="activty">
+          <p>関東（東京）を中心に、</p><p>月に2～3回お出かけ企画や着付け練習会を行っています</p>
+        </div>
       </div>
       <div class="destination_example">
-        <h2 class="title">お出かけの具体例</h2>
+        <h2 class="subtitle">お出かけの具体例</h2>
         <ul>
           <li>庭園や美術館</li>
           <li>買い物ツアー</li>
@@ -37,10 +35,14 @@
         </ul>
       </div>
       <div class="information">
-        <p>
-          興味のある方や入会希望の方は、
-          LINE＠かお問い合わせでご連絡ください
-        </p>
+        <p>興味のある方や入会希望の方は、</p><p>LINE@やお問い合わせでご連絡ください </p>
+      </div>
+      <div class="link">
+        <ul>
+          <li class="activty" @click="$router.push({ name: 'Activty' })">活動内容はこちら</li>
+          <li class="faq" @click="$router.push({ name: 'Faq' })">よくある質問はこちら</li>
+          <li class="contact" @click="$router.push({ name: 'Contact' })">お問い合わせはこちら</li>
+        </ul>
       </div>
     </div>
     <Footer />
@@ -57,3 +59,148 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+#main {
+  border: solid 100px;
+  border-image: url(../assets/雪輪枠.png) 30 round;
+  margin-bottom: 125px;
+  margin-top: 125px;
+}
+.title {
+  text-align: center;
+}
+.title img {
+  height: 5rem;
+  margin: 2rem 0;
+}
+.title h1 {
+  text-decoration: underline #9B003F 0.5rem;
+  font-family: "beautiful font";
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+.introduction {
+  text-align: center;
+  font-family: "UD Digi Kyokasho NP-R";
+  font-size: 2rem;
+  line-height: 3;
+}
+.purpose p {
+  display: inline;
+}
+.established p {
+  display: inline;
+}
+.student p {
+  display: inline;
+}
+.activty p {
+  display: inline;
+}
+.destination_example {
+  font-family: "UD Digi Kyokasho NP-R";
+  line-height: 3;
+}
+.destination_example h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+  text-align: center;
+}
+.destination_example ul {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  margin-left: 15%;
+}
+.destination_example li {
+  margin-left: 5%;
+}
+.information {
+  text-align: center;
+  font-family: "UD Digi Kyokasho NP-R";
+  font-size: 2rem;
+  line-height: 3;
+}
+.information p {
+  display: inline;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  line-height: 3;
+}
+.link ul {
+  list-style: none;
+  text-decoration: underline;
+  font-family: "UD Digi Kyokasho NP-R";
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  #main {
+    border: solid 10vw;
+    border-image: url(../assets/雪輪枠.png) 30 round;
+    margin-top: 20vw;
+    margin-bottom: 20vw;
+  }
+  .title img {
+  height: 15vw;
+  margin: 4vw 0;
+  }
+  .title h1 {
+  text-decoration: underline #9B003F 1vw;
+  font-size: 10vw;
+  margin-bottom: 4vw;
+  }
+  .introduction {
+    font-size: 4vw;
+    line-height: 2.5;
+  }
+  .purpose p {
+    display: block;
+  }
+  .established p {
+    display: block;
+  }
+  .student p {
+    display: block;
+  }
+  .activty p {
+    display: block;
+  }
+  .destination_example {
+    line-height: 2.5;
+    margin-top: 5vw;
+  }
+  .destination_example h2 {
+    font-size: 4vw;
+  }
+  .destination_example ul {
+    display: block;
+    font-size: 4vw;
+    margin-left: 15%;
+  }
+  .information {
+    font-size: 4vw;
+    line-height: 2;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+  }
+  .information p {
+    display: block;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+    margin-top: 5vw;
+  }
+  .link ul {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+    cursor: pointer;
+  }
+}
+</style>

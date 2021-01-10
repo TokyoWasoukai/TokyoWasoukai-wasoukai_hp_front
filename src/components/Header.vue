@@ -41,21 +41,19 @@ export default {
   data() {
     return {
       ActiveBtn: false
-    }
-  }
-}
+    };
+  },
+};
 </script>
 
 <style scoped>
-.header_menu {
-  position: relative;
-}
 
 .header {
   height: 125px;
   width: 100%;
   background: #ffffff;
   position: fixed;
+  top: 0;
 }
 
 .header-wrap {
@@ -65,9 +63,8 @@ export default {
 }
 
 .header-logo img {
-  position: absolute;
   height: 100px;
-  bottom: 30px;
+  cursor: pointer;
 }
 
 .header-nav {
@@ -92,6 +89,7 @@ export default {
 .header-nav ul {
   display: flex;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .header-nav li {
@@ -184,11 +182,11 @@ export default {
   }
   .hamburger_menu {
     background: #ffffff;
-    margin-top: 20%;
+    top: 0;
     z-index: 10;
     width: 100%;
-    height: 130vw;
-    position: sticky;
+    height: 100%;
+    position: absolute;
   }
   .hamburger_menu ul {
     display: inline-block;
