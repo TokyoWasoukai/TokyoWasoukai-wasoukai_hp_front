@@ -5,21 +5,21 @@
       <div id="eyecatch">
         <h1 class="catchcopy1">服でしょ？
         </h1>
-          <carousel autoplay="true" loop="true" >
+          <carousel autoplay="true" loop="true" :autoplayTimeout="3000" :per-page="1" :speed="2000">
           <slide>
-            <span class="label1"><img src="../assets/lavel1.JPG" alt="">
+            <span class="label"><img src="../assets/lavel1.png" alt="">
             </span>
           </slide>
           <slide>
-            <span class="lavel2"><img src="../assets/lavel2.JPG" alt=""></span>
+            <span class="lavel"><img src="../assets/lavel2.png" alt=""></span>
           </slide>
           <slide>
-            <span class="label3"><img src="../assets/lavel3.JPG" alt=""></span>
+            <span class="label"><img src="../assets/lavel3.png" alt=""></span>
           </slide>
           <slide>
-            <span class="lavel4"><img src="../assets/lavel4.JPG" alt=""></span>
+            <span class="lavel"><img src="../assets/lavel4.png" alt=""></span>
           </slide>
-  </carousel>
+          </carousel>
         <h1 class="catchcopy2"> 着物だって、</h1>          
       </div>
       <div id="about">
@@ -74,7 +74,7 @@
 import Header from "../components/Header.vue";
 import Footer from "../components/Footer.vue";
 import { Carousel, Slide } from "vue-carousel";
-const VueCarousel  = window.VueCarousel.default;
+
 
 export default {
   components: {
@@ -118,17 +118,45 @@ export default {
   border-image: url(../assets/雪輪枠.png) 30 round;
   margin-bottom: 125px;
   margin-top: 125px;
+  width: 100%;
+  max-width: 100%;
 }
 #eyecatch {
   display: flex;
   justify-content: space-between;
+  padding: 3vh;
+  padding-top: 0;
+  width: 100%;
+  max-width: 100%;
 }
 #eyecatch h1 {
   writing-mode: vertical-lr;
   font-family: "beautiful font";
   font-size: 5rem;
-  margin: 140px;
-  margin-bottom: 0;
+}
+#eyecatch .VueCarousel {
+  width: 80%;
+  max-width: 80%;
+  text-align: center;
+}
+#eyecatch .VueCarousel-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+#eyecatch .label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#eyecatch .label img {
+  margin: 0;
+  width: 80%;
+  max-width: 80%;
+  height: auto;
 }
 #about {
   text-align: center;

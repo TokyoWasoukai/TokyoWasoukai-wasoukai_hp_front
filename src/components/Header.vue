@@ -54,6 +54,7 @@ export default {
   background: #ffffff;
   position: fixed;
   top: 0;
+  z-index: 10;
 }
 
 .header-wrap {
