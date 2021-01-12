@@ -75,7 +75,7 @@ export default {
 <style scoped>
 #main {
   border: solid 100px;
-  border-image: url(../assets/雪輪枠.png) 30 round;
+  border-image: url(../assets/雪輪枠.png) 50 round;
   margin-bottom: 125px;
   margin-top: 125px;
 }
@@ -150,7 +150,7 @@ export default {
 
   #main {
     border: solid 10vw;
-    border-image: url(../assets/雪輪枠.png) 30 round;
+    border-image: url(../assets/雪輪枠.png) 50 round;
     margin-top: 20vw;
     margin-bottom: 20vw;
   }
@@ -172,13 +172,13 @@ export default {
   .contact .box {
     background: #E5E5E5;
     width: 70%;
-    height: 60vw;
+    height: 45%;
     border: solid  #007655 ;
     border-radius: 3vw;
     display: inline-block;
     text-align: center;
     margin-top: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 10vw;
   }
   .contact label {
     font-family: "UD Digi Kyokasho NP-R";
@@ -209,10 +209,10 @@ export default {
     background: #007655;
     color: #ffffff;
     border-style: none;
-    padding: 1vw 2vw;
-    border-radius: 1.5vw;
+    padding: 1.5vw 3vw;
+    border-radius: 2vw;
     left: 10%;
-    margin-top: 3vw;
+    margin-bottom: 5%;
   }
   .imformation {
     margin-bottom: 5vw;

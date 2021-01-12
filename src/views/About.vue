@@ -86,16 +86,7 @@ export default {
   font-size: 2rem;
   line-height: 3;
 }
-.purpose p {
-  display: inline;
-}
-.established p {
-  display: inline;
-}
-.student p {
-  display: inline;
-}
-.activty p {
+.purpose p, .established p, .student p .activty p {
   display: inline;
 }
 .destination_example {
@@ -141,7 +132,7 @@ export default {
 @media screen and (max-width: 768px) {
   #main {
     border: solid 10vw;
-    border-image: url(../assets/雪輪枠.png) 30 round;
+    border-image: url(../assets/雪輪枠.png) 50 round;
     margin-top: 20vw;
     margin-bottom: 20vw;
   }
@@ -158,16 +149,7 @@ export default {
     font-size: 4vw;
     line-height: 2.5;
   }
-  .purpose p {
-    display: block;
-  }
-  .established p {
-    display: block;
-  }
-  .student p {
-    display: block;
-  }
-  .activty p {
+  .purpose p, .established p, .student p, .activty p {
     display: block;
   }
   .destination_example {

@@ -11,13 +11,13 @@
             </span>
           </slide>
           <slide>
-            <span class="lavel"><img src="../assets/lavel2.png" alt=""></span>
+            <span class="label"><img src="../assets/lavel2.png" alt=""></span>
           </slide>
           <slide>
             <span class="label"><img src="../assets/lavel3.png" alt=""></span>
           </slide>
           <slide>
-            <span class="lavel"><img src="../assets/lavel4.png" alt=""></span>
+            <span class="label"><img src="../assets/lavel4.png" alt=""></span>
           </slide>
           </carousel>
         <h1 class="catchcopy2"> 着物だって、</h1>          
@@ -45,7 +45,7 @@
       </div>
       <div id="contact">
         <h2>お問い合わせ</h2>
-        <form class="form" method="post" @submit.prevent="sendContact()">
+        <form class="form" method="post" netlify @submit.prevent="sendContact()">
           <div class="box">
             <div>
               <label for="name">お名前</label>
@@ -57,7 +57,7 @@
             </div>
             <div>
               <label for="msg">お問い合わせ内容</label>
-              <textarea id="msg" name="user_message" v-model="msg"></textarea>
+              <textarea id="msg" name="message" v-model="msg"></textarea>
             </div>
             <div class="button-submit">
               <button class="button" type="submit">送信</button>
@@ -108,7 +108,28 @@ export default {
         alert("送信しました");
       }
     },
-  },
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join('&')
+    },
+    handleSubmit () {
+      const axiosConfig = {
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+      }
+      this.axios
+        .post(
+          '/',
+          this.encode({
+            'form-name': 'contact',
+            ...this.form
+          }),
+          axiosConfig
+        )
+    },
+  }, 
 };
 </script>
 
@@ -118,14 +139,11 @@ export default {
   border-image: url(../assets/雪輪枠.png) 30 round;
   margin-bottom: 125px;
   margin-top: 125px;
-  width: 100%;
   max-width: 100%;
 }
 #eyecatch {
   display: flex;
-  justify-content: space-between;
-  padding: 3vh;
-  padding-top: 0;
+  justify-content: space-evenly;
   width: 100%;
   max-width: 100%;
 }
@@ -133,6 +151,7 @@ export default {
   writing-mode: vertical-lr;
   font-family: "beautiful font";
   font-size: 5rem;
+  margin-top: 5rem;
 }
 #eyecatch .VueCarousel {
   width: 80%;
@@ -144,18 +163,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
 }
-#eyecatch .label {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 #eyecatch .label img {
-  margin: 0;
-  width: 80%;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
 }
 #about {
@@ -315,9 +326,24 @@ export default {
     margin-top: 5vw;
     display: inline;
     justify-content: center;
-    margin-top: 3vw;
-    margin-left: 2vw;
-    margin-right: 2vw;
+  }
+  #eyecatch .VueCarousel {
+  width: 80%;
+  max-width: 80%;
+  height: 80%;
+  text-align: center;
+  }
+  #eyecatch .VueCarousel-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #eyecatch .label img {
+    margin: 0;
+    max-width: 100%;
+    height: auto;
   }
   #about h2 {
     font-size: 7vw;
