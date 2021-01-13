@@ -152,7 +152,7 @@ export default {
   writing-mode: vertical-lr;
   font-family: "beautiful font";
   font-size: 5rem;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 #eyecatch .VueCarousel {
   width: 80%;
@@ -324,7 +324,7 @@ export default {
   }
   #eyecatch h1 {
     font-size: 10vw;
-    margin-top: 5vw;
+    margin-top: 10vw;
     display: inline;
     justify-content: center;
   }
@@ -341,11 +341,15 @@ export default {
     justify-content: center;
     padding: 0;
   }
+  #eyecatch .label {
+    margin-top: 10vw;
+  }
   #eyecatch .label img {
     margin: 0;
     max-width: 100%;
     height: auto;
   }
+
   #about h2 {
     font-size: 7vw;
     text-decoration: underline #9B003F 0.5vw;
