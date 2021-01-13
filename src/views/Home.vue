@@ -5,7 +5,7 @@
       <div id="eyecatch">
         <h1 class="catchcopy1">服でしょ？
         </h1>
-          <carousel autoplay="true" loop="true" :autoplayTimeout="3000" :per-page="1" :speed="2000">
+          <carousel :autoplay="true" :loop="true" :autoplayTimeout="3000" :per-page="1" :speed="2000">
           <slide>
             <span class="label"><img src="../assets/lavel1.png" alt="">
             </span>
