@@ -91,9 +91,10 @@ export default {
       msg: "",
     };
   },
-    //バリデーション
+    
   methods: {
     sendContact() {
+      //バリデーション
       if (
         this.text == "" ||
         this.email == "" ||
