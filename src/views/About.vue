@@ -63,7 +63,7 @@ export default {
 <style scoped>
 #main {
   border: solid 100px;
-  border-image: url(../assets/雪輪枠.png) 30 round;
+  border-image: url(../assets/雪輪枠.png) 50 round;
   margin-bottom: 125px;
   margin-top: 125px;
 }
@@ -84,9 +84,9 @@ export default {
   text-align: center;
   font-family: "UD Digi Kyokasho NP-R";
   font-size: 2rem;
-  line-height: 3;
+  line-height: 2.5;
 }
-.purpose p, .established p, .student p .activty p {
+.purpose p, .established p, .student p, .activty p {
   display: inline;
 }
 .destination_example {
@@ -119,7 +119,7 @@ export default {
 .link {
   display: flex;
   justify-content: center;
-  line-height: 3;
+  line-height: 2;
 }
 .link ul {
   list-style: none;
@@ -149,12 +149,16 @@ export default {
     font-size: 4vw;
     line-height: 2.5;
   }
+  .purpose, .established, .student, .activty {
+    margin-top: 5vw;
+  }
   .purpose p, .established p, .student p, .activty p {
     display: block;
+    line-height: 1.2;
   }
   .destination_example {
-    line-height: 2.5;
     margin-top: 5vw;
+    line-height: 2;
   }
   .destination_example h2 {
     font-size: 4vw;
@@ -166,7 +170,7 @@ export default {
   }
   .information {
     font-size: 4vw;
-    line-height: 2;
+    line-height: 1.2;
     margin-bottom: 5vw;
     margin-top: 5vw;
   }
@@ -176,7 +180,6 @@ export default {
   .link {
     display: flex;
     justify-content: center;
-    line-height: 2;
     margin-top: 5vw;
   }
   .link ul {

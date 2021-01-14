@@ -306,7 +306,6 @@ export default {
     max-width: 100%;
     height: auto;
   }
-
   #about h2 {
     font-size: 7vw;
     text-decoration: underline #9B003F 0.5vw;
@@ -316,7 +315,7 @@ export default {
   #about p {
     font-size: 3vw;
     display: block;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   #about button {
     font-size: 3vw;
@@ -334,7 +333,7 @@ export default {
   #activty p {
     font-size: 3vw;
     display: block;
-    line-height: 1.5;
+    line-height: 1.2;
   }
   #activty button {
     font-size: 3vw;

@@ -144,7 +144,7 @@ export default {
 }
 #example {
   font-family: "UD Digi Kyokasho NP-R";
-  line-height: 3;
+  line-height: 2;
 }
 #example h2 {
   text-align: center;
@@ -189,7 +189,7 @@ export default {
   font-family: "UD Digi Kyokasho NP-R";
   text-align: center;
   font-size: 2rem;
-  line-height: 3;
+  line-height: 2;
   margin-top: 2rem;
 }
 #explanation p, #information p {
@@ -228,7 +228,7 @@ export default {
   #activty p, #explanation p, #information p {
     display: block;
     font-size: 4vw;
-    line-height: 2;
+    line-height: 1.2;
   }
   #example {
     line-height: 2.5;
