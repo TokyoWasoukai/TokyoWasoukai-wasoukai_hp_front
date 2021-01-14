@@ -59,7 +59,7 @@
         <p>Q.  感染症対策はしていますか？</p>
         </div>
         <div class="A7" v-show="show.indexOf('7') >= 0">
-          <p>A.  マスク着用必須やアルコール消毒、大人数の活動の場合は少人数グループに別れて行動するなどの対策をしています。</p>
+          <p>A.  マスク着用やアルコール消毒、大人数の活動の場合は少人数グループに別れて行動するなどの対策をしています。</p>
           <p>活動の頻度も例年より少なめです。</p>
         </div>
       </div>
@@ -129,14 +129,15 @@ export default {
   font-size: 2rem;
   margin-left: 30%;
   margin-right: 20%;
-  line-height: 2;
+  line-height: 1.2;
 }
 .Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7 {
-  margin-top: 2rem;
+  margin-top: 5rem;
   cursor: pointer;
 }
 .A1, .A2, .A3, .A4, .A5, .A6, .A7 {
   margin-bottom: 2rem;
+  padding-top: 2rem;
 }
 #enter p, #activty p {
   display: inline;
@@ -172,20 +173,20 @@ export default {
   }
   #enter h2, #activty h2 {
     font-size: 5vw;
-    margin-top: 5vw;
+    margin-top: 10vw;
   }
   .Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .A1, .A2, .A3, .A4, .A5, .A6, .A7 {
   font-size: 3vw;
   margin-left: 10%;
   margin-right: 15%;
-  line-height: 2;
   }
   .Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7 {
     margin-top: 4vw;
     cursor: pointer;
   }
   .A1, .A2, .A3, .A4, .A5, .A6, .A7 {
-    margin-bottom: 4vw;
+    padding-top: 2vw;
+    margin-bottom: 5vw;
   }
   #enter p, #activty p {
     display: block;

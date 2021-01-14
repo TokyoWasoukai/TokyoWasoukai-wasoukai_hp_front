@@ -195,11 +195,14 @@ export default {
   font-size: 2rem;
   margin-left: 15%;
   margin-right: 20%;
-  line-height: 3;
+  line-height: 1.2;
   text-align-last: left;
 }
+#faq .A1, #faq .A2 {
+  padding-top: 2rem;
+}
 #faq .Q2 {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 #faq button {
   font-family: "UD Digi Kyokasho NP-R";
@@ -349,10 +352,12 @@ export default {
   #faq p {
     font-size: 3vw;
     margin-right: 10%;
-    line-height: 2;
+  }
+  #faq .A1, #faq .A2 {
+    padding-top: 2vw;
   }
   #faq .Q2 {
-    margin-top: 2vw;
+    margin-top: 5vw;
   }
   #faq button {
     font-size: 3vw;
