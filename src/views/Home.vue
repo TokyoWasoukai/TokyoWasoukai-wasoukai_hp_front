@@ -45,20 +45,17 @@
       </div>
       <div id="contact">
         <h2>お問い合わせ</h2>
-        <form name="contact" method="post" @submit.prevent="sendContact()" data-netlify="true">
+        <form name="contact" method="post" data-netlify="true">
           <input type="hidden" name="form-name" value="contact" />
           <div class="box">
             <div>
-              <label for="name">お名前</label>
-              <input type="text" id="name" name="user_name" v-model="text" />
+              <label>お名前<input type="text" name="name" /></label>
             </div>
             <div>
-              <label for="mail">返信用メールアドレス</label>
-              <input type="email" id="mail" name="user_mail" v-model="email" />
+              <label>返信用メールアドレス<input type="email" name="email" />
             </div>
             <div>
-              <label for="msg">お問い合わせ内容</label>
-              <textarea id="msg" name="message" v-model="msg"></textarea>
+              <label>お問い合わせ内容<textarea name="message"></textarea></label>
             </div>
             <div class="button-submit">
               <button class="button" type="submit">送信</button>
@@ -83,33 +80,6 @@ export default {
     Footer,
     Carousel,
     Slide,
-  },
-  data() {
-    return {
-      text: "",
-      email: "",
-      tel: "",
-      msg: "",
-    };
-  },
-    
-  methods: {
-    sendContact() {
-      //バリデーション
-      if (
-        this.text == "" ||
-        this.email == "" ||
-        this.msg == ""
-      ) {
-        alert("入力されていない項目があります");
-      } else {
-        //送信をしたらテキストが空になるように更新
-        this.text = "";
-        this.email = "";
-        this.msg = "";
-        alert("送信しました");
-      }
-    },
   }, 
 };
 </script>
