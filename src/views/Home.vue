@@ -46,6 +46,7 @@
       <div id="contact">
         <h2>お問い合わせ</h2>
         <form name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <input type="hidden" name="subject" value="HPからお問い合わせがきました。" />
           <div class="box">
             <div>
