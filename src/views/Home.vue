@@ -49,13 +49,16 @@
           <input type="hidden" name="form-name" value="contact" />
           <div class="box">
             <div>
-              <label>お名前<input type="text" name="name" /></label>
+              <label for="name">お名前</label>
+              <input type="text" id="name" name="user_name" />
             </div>
             <div>
-              <label>返信用メールアドレス<input type="email" name="email" />
+              <label for="mail">返信用メールアドレス</label>
+              <input type="email" id="mail" name="user_mail" />
             </div>
             <div>
-              <label>お問い合わせ内容<textarea name="message"></textarea></label>
+              <label for="msg">お問い合わせ内容</label>
+              <textarea id="msg" name="message"></textarea>
             </div>
             <div class="button-submit">
               <button class="button" type="submit">送信</button>
