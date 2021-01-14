@@ -46,6 +46,7 @@
       <div id="contact">
         <h2>お問い合わせ</h2>
         <form name="contact" method="post" @submit.prevent="sendContact()" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <div class="box">
             <div>
               <label for="name">お名前</label>
