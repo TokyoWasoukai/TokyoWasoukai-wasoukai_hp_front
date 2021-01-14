@@ -7,19 +7,21 @@
         <h1>お問い合わせ</h1>
       </div>
       <div class="contact">
-        <form class="form" method="post" @submit.prevent="sendContact()">
+        <form name="contact" method="post" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="subject" value="HPからお問い合わせがきました。" />
           <div class="box">
             <div>
               <label for="name">お名前</label>
-              <input type="text" id="name" name="user_name" v-model="text" />
+              <input type="text" id="name" name="name" />
             </div>
             <div>
               <label for="mail">返信用メールアドレス</label>
-              <input type="email" id="mail" name="user_mail" v-model="email" />
+              <input type="email" id="mail" name="email" />
             </div>
             <div>
               <label for="msg">お問い合わせ内容</label>
-              <textarea id="msg" name="user_message" v-model="msg"></textarea>
+              <textarea id="msg" name="message"></textarea>
             </div>
             <div class="button-submit">
               <button class="button" type="submit">送信</button>
@@ -42,32 +44,6 @@ export default {
   components: {
     Header,
     Footer,
-  },
-  data() {
-    return {
-      text: "",
-      email: "",
-      tel: "",
-      msg: "",
-    };
-  },
-    //バリデーション
-  methods: {
-    sendContact() {
-      if (
-        this.text == "" ||
-        this.email == "" ||
-        this.msg == ""
-      ) {
-        alert("入力されていない項目があります");
-      } else {
-        //送信をしたらテキストが空になるように更新
-        this.text = "";
-        this.email = "";
-        this.msg = "";
-        alert("送信しました");
-      }
-    },
   },
 };
 </script>
