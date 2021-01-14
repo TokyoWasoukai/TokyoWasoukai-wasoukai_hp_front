@@ -51,11 +51,11 @@
           <div class="box">
             <div>
               <label for="name">お名前</label>
-              <input type="text" id="name" name="user_name" />
+              <input type="text" id="name" name="name" />
             </div>
             <div>
               <label for="mail">返信用メールアドレス</label>
-              <input type="email" id="mail" name="user_mail" />
+              <input type="email" id="mail" name="email" />
             </div>
             <div>
               <label for="msg">お問い合わせ内容</label>
