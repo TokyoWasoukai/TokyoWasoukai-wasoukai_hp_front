@@ -109,27 +109,6 @@ export default {
         alert("送信しました");
       }
     },
-    encode (data) {
-      return Object.keys(data)
-        .map(
-          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
-        )
-        .join('&')
-    },
-    handleSubmit () {
-      const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
-      }
-      this.axios
-        .post(
-          '/',
-          this.encode({
-            'form-name': 'contact',
-            ...this.form
-          }),
-          axiosConfig
-        )
-    },
   }, 
 };
 </script>
