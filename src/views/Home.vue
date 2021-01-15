@@ -274,9 +274,9 @@ export default {
 @media screen and (max-width: 768px) {
 
   #main {
-    border: solid 10vw;
+    border: solid 5vw;
     border-image: url(../assets/雪輪枠.png) 50 round;
-    margin-top: 20vw;
+    margin-top: 15vw;
     margin-bottom: 20vw;
   }
   #eyecatch h1 {
@@ -373,9 +373,9 @@ export default {
   }
   #contact .box {
     background: #E5E5E5;
-    width: 70%;
+    width: 80%;
     height: 45%;
-    border: solid  #007655 ;
+    border: solid  #007655 0.5vw;
     border-radius: 3vw;
     display: inline-block;
     text-align: center;
@@ -387,19 +387,19 @@ export default {
     font-size: 3vw;
     display: block;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 3vw;
     margin-bottom: 0.5vw;
 }
   #contact input {
-    width: 70%;
+    width: 75%;
     height: 4vw;
     border-style: none;
-    border-radius: 0.5vw;
+    border-radius: 1vw;
     margin: 0 auto;
   }
   #contact textarea {
-    width: 70%;
+    width: 75%;
     height: 20vw;
     border-style: none;
     border-radius: 1vw;

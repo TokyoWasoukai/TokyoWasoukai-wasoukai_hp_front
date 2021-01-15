@@ -108,7 +108,7 @@ export default {
 
 @media screen and (max-width: 768px) {
   .header {
-    height: 20vw;
+    height: 15vw;
     background: #9B003F;
     top: 0;
     z-index: 20;
@@ -116,7 +116,7 @@ export default {
   .header-logo img {
     position: absolute;
     width: 20w;
-    height: 15vw;
+    height: 10vw;
     bottom: 3vw;
     cursor: pointer;
   }
@@ -137,23 +137,23 @@ export default {
   top: 0;
   left: 1vw;
   width: 10vw;
-  height: 1vw;
+  height: 0.5vw;
   background: #D4AF37;
   text-align: center;
   }
 
   .line_01 {
-  top: 2vw;
+  top: 1vw;
   transition: 0.4s ease;
   }
 
   .line_02 {
-  top: 6vw;
+  top: 4vw;
   transition: 0.4s ease;
   }
 
   .line_03 {
-  top: 10vw;
+  top: 7vw;
   transition: 0.4s ease;
   }
 
