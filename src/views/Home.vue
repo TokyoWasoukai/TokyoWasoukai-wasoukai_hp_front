@@ -91,7 +91,7 @@ export default {
 <style scoped>
 #main {
   border: solid 100px;
-  border-image: url(../assets/雪輪枠.png) 30 round;
+  border-image: url(../assets/雪輪枠.png) 100 round;
   margin-bottom: 125px;
   margin-top: 125px;
   max-width: 100%;
