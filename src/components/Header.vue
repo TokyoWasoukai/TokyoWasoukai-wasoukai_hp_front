@@ -158,7 +158,7 @@ export default {
   }
 
   .btn_line01 {
-    transform: translateY(4vw) rotate(-45deg);
+    transform: translateY(3vw) rotate(-45deg);
     transition: 0.4s ease;
   }
   .btn_line02 {
@@ -166,7 +166,7 @@ export default {
     opacity: 0;
   }
   .btn_line03 {
-    transform: translateY(-4vw) rotate(45deg);
+    transform: translateY(-3vw) rotate(45deg);
     transition: 0.4s ease;
   }
   .header-nav {

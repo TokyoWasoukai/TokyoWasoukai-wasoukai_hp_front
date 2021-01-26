@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 768px) {
   .footer {
-    border-top: 5px solid #9B003F;
+    border-top: 0.5vw solid #9B003F;
   }
   .footer {
     height: 20vw;

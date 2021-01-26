@@ -101,4 +101,13 @@ hr {
 input, select {
   vertical-align:middle;
 }
+@font-face {
+  font-family: "beautiful font";
+  src: url('./assets/fonts/beautiful font.ttf');
+}
+@font-face {
+  font-family: "UD Digi Kyokasho NP-R";
+  src: url('./assets/fonts/UDDigiKyokashoN-R.ttf');
+  
+}
 </style>

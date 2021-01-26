@@ -2,36 +2,38 @@
   <div>
     <Header />
     <div id="main">
-      <div class="title">
-        <img src="../assets/お問い合わせ.png" alt="">
-        <h1>お問い合わせ</h1>
-      </div>
-      <div class="contact">
-        <form name="contact" method="post" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="hidden" name="subject" value="HPからお問い合わせがきました。" />
-          <div class="box">
-            <div>
-              <label for="name">お名前</label>
-              <input type="text" id="name" name="name" />
-            </div>
-            <div>
-              <label for="mail">返信用メールアドレス</label>
-              <input type="email" id="mail" name="email" />
-            </div>
-            <div>
-              <label for="msg">お問い合わせ内容</label>
-              <textarea id="msg" name="message"></textarea>
-            </div>
-            <div class="button-submit">
-              <button class="button" type="submit">送信</button>
-            </div>
-          </div>
-        </form>
-        <div class="imformation">
-          <p>その他、GmailやLINE@でも</p><p>お問い合わせを受け付けております</p>
+    <div class="wrap">
+        <div class="title">
+          <img src="../assets/お問い合わせ.png" alt="">
+          <h1>お問い合わせ</h1>
         </div>
-      </div>
+        <div class="contact">
+          <form name="contact" method="post" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="subject" value="HPからお問い合わせがきました。" />
+            <div class="box">
+              <div>
+                <label for="name">お名前</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div>
+                <label for="mail">返信用メールアドレス</label>
+                <input type="email" id="mail" name="email" />
+              </div>
+              <div>
+                <label for="msg">お問い合わせ内容</label>
+                <textarea id="msg" name="message"></textarea>
+              </div>
+              <div class="button-submit">
+                <button class="button" type="submit">送信</button>
+              </div>
+            </div>
+          </form>
+          <div class="imformation">
+            <p>その他、GmailやLINE@でも</p><p>お問い合わせを受け付けております</p>
+          </div>
+        </div>
+    </div>
     </div>
     <Footer />
   </div>
@@ -50,10 +52,16 @@ export default {
 
 <style scoped>
 #main {
-  border: solid 100px;
-  border-image: url(../assets/雪輪枠.png) 50 round;
-  margin-bottom: 125px;
-  margin-top: 125px;
+  background: url('../assets/雪輪枠.png') repeat;
+  padding: 125px;
+  max-width: 100%;
+  min-height: 100vh;
+}
+.wrap {
+  max-width: 100%;
+  background: #ffffff;
+  padding-top: 125px;
+  min-height: 100vh;
 }
 .title {
   text-align: center;
@@ -63,7 +71,7 @@ export default {
   margin: 2rem 0;
 }
 .title h1 {
-  text-decoration: underline #9B003F 0.5rem;
+  text-decoration: underline #9B003F;
   font-family: "beautiful font";
   font-size: 4rem;
   margin-bottom: 5rem;
@@ -125,31 +133,32 @@ export default {
 @media screen and (max-width: 768px) {
 
   #main {
-    border: solid 10vw;
-    border-image: url(../assets/雪輪枠.png) 50 round;
-    margin-top: 20vw;
-    margin-bottom: 20vw;
+    background: url(../assets/雪輪枠P.png) repeat;
+    padding: 5vw;
+  }
+  .wrap {
+    padding-top: 10vw;
   }
   .title img {
     height: 15vw;
     margin: 4vw 0;
   }
   .title h1 {
-    text-decoration: underline #9B003F 1vw;
+    text-decoration: underline #9B003F;
     font-size: 10vw;
     margin-bottom: 4vw;
   }
   .contact h2 {
     font-size: 7vw;
-    text-decoration: underline #9B003F 0.5vw;
+    text-decoration: underline #9B003F;
     margin-bottom: 5vw;
     margin-top: 5vw;
   }
   .contact .box {
     background: #E5E5E5;
-    width: 70%;
+    width: 90%;
     height: 45%;
-    border: solid  #007655 ;
+    border: solid  #007655 0.5vw;
     border-radius: 3vw;
     display: inline-block;
     text-align: center;
@@ -158,22 +167,22 @@ export default {
   }
   .contact label {
     font-family: "UD Digi Kyokasho NP-R";
-    font-size: 3vw;
+    font-size: 4vw;
     display: block;
     text-align: left;
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 3vw;
     margin-bottom: 0.5vw;
   }
   .contact input {
-    width: 70%;
-    height: 4vw;
+    width: 80%;
+    height: 5vw;
     border-style: none;
-    border-radius: 0.5vw;
+    border-radius: 1vw;
     margin: 0 auto;
   }
   .contact textarea {
-    width: 70%;
+    width: 80%;
     height: 20vw;
     border-style: none;
     border-radius: 1vw;
@@ -181,7 +190,7 @@ export default {
   }
   .contact button {
     font-family: "UD Digi Kyokasho NP-R";
-    font-size: 2vw;
+    font-size: 4vw;
     background: #007655;
     color: #ffffff;
     border-style: none;
