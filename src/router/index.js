@@ -5,6 +5,7 @@ import About from '../views/About.vue';
 import Activty from '../views/Activty.vue';
 import Faq from '../views/Faq.vue';
 import Contact from '../views/Contact.vue';
+import './assets/sass/style.scss';
 
 Vue.use(VueRouter);
 
