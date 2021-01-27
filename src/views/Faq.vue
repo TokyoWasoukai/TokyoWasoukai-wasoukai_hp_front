@@ -123,7 +123,7 @@ export default {
   margin: 2rem 0;
 }
 .title h1 {
-  text-decoration: underline #9B003F 0.5rem;
+  text-decoration: underline #9B003F;
   font-family: "beautiful font";
   font-size: 4rem;
   margin-bottom: 4rem;
@@ -181,7 +181,7 @@ export default {
   margin: 4vw 0;
   }
   .title h1 {
-  text-decoration: underline #9B003F 1vw;
+  text-decoration: underline #9B003F;
   font-size: 10vw;
   margin-bottom: 4vw;
   }
