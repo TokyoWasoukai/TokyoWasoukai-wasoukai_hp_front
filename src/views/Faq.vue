@@ -109,6 +109,7 @@ export default {
   max-width: 100%;
   background: #ffffff;
   padding-top: 125px;
+  min-height: 100vh;
 }
 .wrap {
   max-width: 100%;
