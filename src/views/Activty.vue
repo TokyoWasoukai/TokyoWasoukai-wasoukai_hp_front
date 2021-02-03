@@ -131,7 +131,7 @@ export default {
   text-align: center;
 }
 .title img {
-  height: 5rem;
+  height: 7rem;
   margin: 2rem 0;
 }
 .title h1 {
@@ -163,6 +163,7 @@ export default {
   flex-wrap: wrap;
   font-size: 2rem;
   margin-left: 15%;
+  margin-right: 10%;
 }
 #example li {
   margin-left: 5%;
@@ -225,7 +226,7 @@ export default {
     min-height: 100vh;
   }
   .title img {
-  height: 15vw;
+  height: 10vw;
   margin: 4vw 0;
   }
   .title h1 {

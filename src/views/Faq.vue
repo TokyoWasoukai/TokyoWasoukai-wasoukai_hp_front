@@ -10,8 +10,7 @@
         <div id="enter">
           <h2>入会について</h2>
           <div class="Q1" @click="click('1')">
-            <p>Q.  初心者で着物を持っていないのですが、</p>
-            <p>大丈夫ですか？</p>
+            <p>Q.▼  初心者で着物を持っていないのですが、大丈夫ですか？</p>
           </div>
           <div class="A1" v-show="show.indexOf('1') >= 0">
             <p>A.  大丈夫です。</p>
@@ -19,20 +18,20 @@
             <p>着付け練習会もあるので、着付けができなくてもかまいません。</p>
           </div>
           <div class="Q2" @click="click('2')">
-            <p>Q.  2年生なのですが、入会できますか？</p>
+            <p>Q.▼  2年生なのですが、入会できますか？</p>
           </div>
           <div class="A2" v-show="show.indexOf('2') >= 0">
             <p>A.  もちろんです！</p>
             <p>大学、短大、専門、大学院の学生であれば、学年問わず1年中入れます。</p>
           </div>
           <div class="Q3" @click="click('3')">
-            <p>Q.  他のサークルとの掛け持ちはできますか？</p>
+            <p>Q.▼  他のサークルとの掛け持ちはできますか？</p>
           </div>
           <div class="A3" v-show="show.indexOf('3') >= 0">
             <p>A.  もちろんできます！</p>
           </div>
           <div class="Q4" @click="click('4')">
-            <p>Q. 入会費や年会費はいくらですか？</p>
+            <p>Q.▼ 入会費や年会費はいくらですか？</p>
           </div>
           <div class="A4" v-show="show.indexOf('4') >= 0">
             <p>A.  入会費は無料で年会費は2000円を指定の口座に振込支払いです。</p>
@@ -42,14 +41,14 @@
         <div id="activty">
           <h2>活動について</h2>
           <div class="Q5" @click="click('5')">
-          <p>Q.  毎回着物を着ていかなくてはいけませんか？</p>
+          <p>Q.▼  毎回着物を着ていかなくてはいけませんか？</p>
           </div>
           <div class="A5" v-show="show.indexOf('5') >= 0">
             <p>A.  着物でなくてもかまいません。</p>
             <p>洋服や和服や和洋折衷コーデなど、何を着るかは個人の自由です。</p>
           </div>
           <div class="Q6" @click="click('6')">
-          <p>Q.  着物は高いイメージがあります。</p>
+          <p>Q.▼  着物は高いイメージがあります。</p>
           <p>安く手にいれることはできますか？</p>
           </div>
           <div class="A6" v-show="show.indexOf('6') >= 0">
@@ -57,7 +56,7 @@
             <p>1万円までのカジュアルな着物を持っている会員が多いです。</p>
           </div>
           <div class="Q7" @click="click('7')">
-          <p>Q.  感染症対策はしていますか？</p>
+          <p>Q.▼  感染症対策はしていますか？</p>
           </div>
           <div class="A7" v-show="show.indexOf('7') >= 0">
             <p>A.  マスク着用やアルコール消毒、大人数の活動の場合は少人数グループに別れて行動するなどの対策をしています。</p>
@@ -120,7 +119,7 @@ export default {
   text-align: center;
 }
 .title img {
-  height: 5rem;
+  height: 7rem;
   margin: 2rem 0;
 }
 .title h1 {
@@ -151,6 +150,7 @@ export default {
 .A1, .A2, .A3, .A4, .A5, .A6, .A7 {
   margin-bottom: 2rem;
   padding-top: 2rem;
+  font-weight: bolder;
 }
 #enter p, #activty p {
   display: inline;
@@ -163,7 +163,7 @@ export default {
   font-family: "UD Digi Kyokasho NP-R";
   text-decoration: underline;
   font-size: 2rem;
-  margin-bottom: 4rem;
+  margin: 5rem 0;
   cursor: pointer;
   margin: 3rem 0;
 }
@@ -172,7 +172,7 @@ export default {
   #main {
     background: url(../assets/雪輪枠P.png) repeat;
     padding: 5vw;
-    margin-bottom: 5vw;
+    padding-bottom: 20vw;
     min-height: 100vh;
   }
   .wrap {
@@ -180,7 +180,7 @@ export default {
     min-height: 100vh;
   }
   .title img {
-  height: 15vw;
+  height: 10vw;
   margin: 4vw 0;
   }
   .title h1 {
@@ -193,9 +193,9 @@ export default {
     margin-top: 10vw;
   }
   .Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7, .A1, .A2, .A3, .A4, .A5, .A6, .A7 {
-  font-size: 3vw;
+  font-size: 4vw;
   margin-left: 10%;
-  margin-right: 15%;
+  margin-right: 10%;
   }
   .Q1, .Q2, .Q3, .Q4, .Q5, .Q6, .Q7 {
     margin-top: 4vw;
@@ -209,7 +209,7 @@ export default {
     display: block;
   }
   #link p {
-  font-size: 3vw;
+  font-size: 4vw;
   margin: 5vw 0;
   }
 }

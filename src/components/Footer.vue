@@ -4,7 +4,7 @@
       <div class="SNS-wrap">
         <ul>
           <li class="Twitter"><a href="https://twitter.com/wasoukai"><img src="../assets/Twitter.png" alt="" /></a></li>
-          <li class="Instagram"><a href="https://www.instagram.com/p/B_9Se9dAPjc/"><img src="../assets/Instagram.png" alt="" /></a></li>
+          <li class="Instagram"><a href="https://www.instagram.com/tokyowasoukai/"><img src="../assets/Instagram.png" alt="" /></a></li>
           <li class="Gmail"><a href="mailto:tokyo.wasoukai2020@gmail.com"><img src="../assets/Gmail.png" alt="" /></a></li>
           <li class="Line"><a href="https://t.co/2py3rqZDe7?amp=1"><img src="../assets/Line.png" alt="" /></a></li>
         </ul>

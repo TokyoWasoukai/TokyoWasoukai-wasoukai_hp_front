@@ -65,21 +65,21 @@ export default {
 <style scoped>
 #main {
   background: url('../assets/雪輪枠.png') repeat;
-  min-height: 100vh;
   padding: 125px;
   max-width: 100%;
+  min-height: 100vh;
 }
 .wrap {
   max-width: 100%;
   background: #ffffff;
-  padding-top: 125px;
+  padding: 125px 0;
   min-height: 100vh;
 }
 .title {
   text-align: center;
 }
 .title img {
-  height: 5rem;
+  height: 7rem;
   margin: 2rem 0;
 }
 .title h1 {
@@ -145,7 +145,7 @@ export default {
     padding: 5vw;
   }
   .title img {
-  height: 15vw;
+  height: 10vw;
   margin: 4vw 0;
   }
   .wrap {

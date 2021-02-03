@@ -27,6 +27,9 @@
           <h2>和蒼会について</h2>
           <p>東京和蒼会とは、着物が好きな学生が</p>
           <p>交流することを目的としたサークルです</p>
+          <br>
+          <p>関西和蒼会はこちら</p>
+          <a href="https://ameblo.jp/wasoukai-kansai/">関西和蒼会アメブロ</a>
           <button @click="$router.push({ name: 'About' })">すべて見る</button>
         </div> 
         <div id="activty">
@@ -86,7 +89,7 @@ export default {
     Footer,
     Carousel,
     Slide,
-  }, 
+  },
 };
 </script>
 
@@ -146,6 +149,13 @@ export default {
   font-size: 2rem;
   display: inline;
 }
+#about a {
+  display: inline;
+  font-family: "UD Digi Kyokasho NP-R";
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-left: 3rem;
+}
 #about button {
   font-family: "UD Digi Kyokasho NP-R";
   font-size: 2rem;
@@ -154,7 +164,7 @@ export default {
   border-style: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  margin-left: 75%;
+  margin-left: 85%;
   margin-top: 5rem;
   
 }
@@ -183,10 +193,12 @@ export default {
   border-style: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  margin-left: 75%;
+  margin-left: 85%;
   margin-top: 5rem;
 }
-
+#faq {
+  text-align: center;
+}
 #faq h2 {
   text-decoration: underline #9B003F;
   font-family: "beautiful font";
@@ -196,15 +208,17 @@ export default {
   margin-top: 5rem;
 }
 #faq p {
+  display: block;
   font-family: "UD Digi Kyokasho NP-R";
   font-size: 2rem;
   margin-left: 15%;
   margin-right: 20%;
   line-height: 1.2;
-  text-align-last: left;
+  text-align-last: left !important;
 }
 #faq .A1, #faq .A2 {
   padding-top: 2rem;
+  font-weight: bolder;
 }
 #faq .Q2 {
   margin-top: 5rem;
@@ -217,7 +231,7 @@ export default {
   border-style: none;
   padding: 1.5rem 3rem;
   border-radius: 2rem;
-  margin-left: 75%;
+  margin-left: 85%;
   margin-top: 5rem;
 }
 #contact {
@@ -323,6 +337,11 @@ export default {
     display: block;
     line-height: 1.2;
   }
+  #about a {
+    font-size: 4vw;
+    line-height: 1.5;
+    margin-left: 1vh;
+  }
   #about button {
     font-size: 4vw;
     padding: 2vw 4vw;
@@ -348,9 +367,6 @@ export default {
     margin-left: 60%;
     margin-top: 5vw;
   }
-  #faq {
-    text-align-last: right;
-  }
   #faq h2 {
     font-size: 8vw;
     text-decoration: underline #9B003F;
@@ -361,7 +377,7 @@ export default {
     font-size: 4vw;
     margin-left: 5%;
     margin-right: 5%;
-    text-align-last: right;
+    text-align-last: left !important;
   }
   #faq .A1, #faq .A2 {
     padding-top: 2vw;
