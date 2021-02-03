@@ -374,10 +374,10 @@ export default {
     margin-top: 5vw;
   }
   #faq p {
+    text-align: start !important;
     font-size: 4vw;
     margin-left: 5%;
     margin-right: 5%;
-    text-align-last: left !important;
   }
   #faq .A1, #faq .A2 {
     padding-top: 2vw;
