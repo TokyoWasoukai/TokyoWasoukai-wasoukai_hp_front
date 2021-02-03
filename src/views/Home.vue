@@ -340,7 +340,7 @@ export default {
   #about a {
     font-size: 4vw;
     line-height: 1.5;
-    margin-left: 1vh;
+    margin: 1vw 0;
   }
   #about button {
     font-size: 4vw;
