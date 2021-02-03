@@ -172,6 +172,8 @@ export default {
   #main {
     background: url(../assets/雪輪枠P.png) repeat;
     padding: 5vw;
+    margin-bottom: 5vw;
+    min-height: 100vh;
   }
   .wrap {
     padding-top: 15vw;
