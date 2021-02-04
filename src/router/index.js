@@ -12,7 +12,8 @@ Vue.use(VueRouter);
 const routes = [{
   path: '/',
   name: 'Home',
-  component: Home
+  component: Home,
+  meta: { title: '東京和蒼会Top', desc: '' }
 }, {
   path: '/about',
   name: 'About',
