@@ -279,5 +279,8 @@ export default {
     font-size: 4vw;
     margin-bottom: 4vw;
   }
+  #link li {
+    margin: 4vw 0;
+  }
 }
 </style>

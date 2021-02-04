@@ -149,7 +149,7 @@ export default {
   margin: 4vw 0;
   }
   .wrap {
-    padding-top: 15vw;
+    padding: 15vw 0;
   }
   .title h1 {
   text-decoration: underline #9B003F;
