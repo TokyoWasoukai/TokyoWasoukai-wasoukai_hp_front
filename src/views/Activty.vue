@@ -131,7 +131,7 @@ export default {
   text-align: center;
 }
 .title img {
-  height: 7rem;
+  height: 6rem;
   margin: 2rem 0;
 }
 .title h1 {
@@ -222,7 +222,7 @@ export default {
     padding: 5vw;
   }
   .wrap {
-    padding-top: 15vw;
+    padding: 15vw 0;
     min-height: 100vh;
   }
   .title img {
@@ -280,7 +280,7 @@ export default {
     margin-bottom: 4vw;
   }
   #link li {
-    margin: 4vw 0;
+    margin: 0;
   }
 }
 </style>

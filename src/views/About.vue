@@ -79,7 +79,7 @@ export default {
   text-align: center;
 }
 .title img {
-  height: 7rem;
+  height: 6rem;
   margin: 2rem 0;
 }
 .title h1 {
