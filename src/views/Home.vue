@@ -28,8 +28,10 @@
           <p>東京和蒼会とは、着物が好きな学生が</p>
           <p>交流することを目的としたサークルです</p>
           <br>
-          <p>関西和蒼会はこちら</p>
-          <a href="https://ameblo.jp/wasoukai-kansai/">関西和蒼会アメブロ</a>
+          <div class="link">
+            <p> 姉妹サークルの関西和蒼会は</p>
+            <a href="https://ameblo.jp/wasoukai-kansai/">こちら</a>
+          </div>
           <button @click="$router.push({ name: 'About' })">すべて見る</button>
         </div> 
         <div id="activty">
@@ -154,7 +156,6 @@ export default {
   font-family: "UD Digi Kyokasho NP-R";
   font-size: 2rem;
   line-height: 1.5;
-  margin-left: 3rem;
 }
 #about button {
   font-family: "UD Digi Kyokasho NP-R";
@@ -290,13 +291,44 @@ export default {
   left: 10%;
   margin-top: 1rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1344px) {
 
+  #main {
+    padding: 7vw;
+  }
+  #eyecatch h1 {
+    font-size: 10vw;
+    margin-top: 0;
+  }
+  #eyecatch .label img {
+    height: 50vw;
+  }
+  #about button, #activty button, #faq button{
+    margin-left: 60%;
+    margin-top: 5vw;
+  }
+  #faq p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align-last: left !important;
+  }
+  #contact .box {
+  width: 80%;
+  height: 50rem;
 
-  
+  }
+  #contact input {
+    width: 80%;
+  }
+  #contact textarea {
+    width: 80%;
+  }
+  #contact label {
+    margin-left: 10%;
+  }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
 
   #main {
     background: url(../assets/雪輪枠P.png) repeat;
@@ -340,9 +372,10 @@ export default {
   }
   #about p {
     font-size: 4vw;
-    display: block;
+    display: inline-block;
     line-height: 1.2;
   }
+
   #about a {
     font-size: 4vw;
     line-height: 1.5;

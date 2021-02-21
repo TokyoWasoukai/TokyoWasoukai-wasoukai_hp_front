@@ -163,13 +163,10 @@ export default {
   cursor: pointer;
   margin: 3rem 0;
 }
+@media screen and (max-width: 1344px) {
 
-@media screen and (max-width: 1024px) {
   #main {
-    background: url(../assets/雪輪枠P.png) repeat;
-    padding: 5vw;
-    padding-bottom: 20vw;
-    min-height: 100vh;
+    padding: 7vw;
   }
   .wrap {
     padding: 15vw 0;
@@ -207,6 +204,14 @@ export default {
   #link p {
   font-size: 4vw;
   margin: 5vw 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main {
+    background: url(../assets/雪輪枠P.png) repeat;
+    padding: 5vw;
+    padding-bottom: 20vw;
+    min-height: 100vh;
   }
 }
 </style>

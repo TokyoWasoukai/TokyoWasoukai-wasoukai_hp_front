@@ -124,19 +124,45 @@ export default {
   left: 10%;
   margin-top: 1rem;
 }
+.imformation {
+  margin: 100px 0;
+}
 .imformation p {
   display: inline;
   font-family: "UD Digi Kyokasho NP-R";
   font-size: 3rem;
-  line-height: 5;
+  line-height: 1.2;
 }
-@media screen and (max-width : 768px){
-
-  .title h1 {
-    font-size: 7vw;
-    margin-bottom: 4vw;
+@media screen and (max-width : 1344px){
+  
+  #main {
+    padding: 7vw;
   }
-
+  .wrap {
+    padding: 15vw 0;
+    min-height: 100vh;
+  }
+  .contact .box {
+    width: 80%;
+    height: 50rem;
+  }
+  .contact input {
+    width: 80%;
+  }
+  .contact textarea {
+    width: 80%;
+  }
+  .contact label {
+    margin-left: 10%;
+  }
+  .imformation {
+    margin: 200px 0;
+  }
+  .imformation p {
+    display: block;
+    font-size: 4vw;
+    line-height: 1.5;
+  }
 
 }
 @media screen and (max-width: 480px) {
@@ -209,7 +235,7 @@ export default {
     margin-bottom: 5%;
   }
   .imformation {
-    margin-bottom: 5vw;
+    margin: 5vw;
   }
   .imformation p {
     display: block;

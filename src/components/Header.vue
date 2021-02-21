@@ -190,7 +190,7 @@ export default {
     position: fixed;
   }
   .hamburger_menu ul {
-    display: inline-block;
+    display: inline;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -213,7 +213,7 @@ export default {
   }
   .hamburger_menu ul .about::before, .about::after {
     content: '';
-    display: inline-block;
+    display: inline;
     background-image: url(../assets/和蒼会について.png);
     width: 15vw;
     height: 15vw;

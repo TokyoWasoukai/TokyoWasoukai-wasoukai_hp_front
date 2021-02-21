@@ -139,11 +139,13 @@ export default {
   margin-bottom: 4rem;
   cursor: pointer;
 }
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1344px) {
+
   #main {
-    background: url('../assets/雪輪枠P.png');
-    padding: 5vw;
+    padding: 7vw;
   }
+
   .title img {
   height: 10vw;
   margin: 4vw 0;
@@ -198,6 +200,12 @@ export default {
     font-size: 4vw;
     margin-bottom: 4vw;
     cursor: pointer;
+  }
+}
+@media screen and (max-width: 480px) {
+  #main {
+    background: url('../assets/雪輪枠P.png');
+    padding: 5vw;
   }
 }
 </style>
