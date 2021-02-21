@@ -107,14 +107,10 @@ export default {
 .wrap {
   max-width: 100%;
   background: #ffffff;
-  padding-top: 125px;
+  padding: 125px 0;
   min-height: 100vh;
 }
-.wrap {
-  max-width: 100%;
-  background: #ffffff;
-  padding-top: 125px;
-}
+
 .title {
   text-align: center;
 }
@@ -168,7 +164,7 @@ export default {
   margin: 3rem 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #main {
     background: url(../assets/雪輪枠P.png) repeat;
     padding: 5vw;

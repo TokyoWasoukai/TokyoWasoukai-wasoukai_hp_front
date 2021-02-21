@@ -103,7 +103,7 @@ export default {
 .wrap {
   max-width: 100%;
   background: #ffffff;
-  padding-top: 125px;
+  padding: 125px 0;
   min-height: 100vh;
 }
 #eyecatch {
@@ -132,7 +132,7 @@ export default {
 
 #eyecatch .label img {
   max-width: 100%;
-  height: auto;
+  height: 50rem;
 }
 #about {
   text-align: center;
@@ -292,12 +292,18 @@ export default {
 }
 @media screen and (max-width: 768px) {
 
+
+  
+}
+
+@media screen and (max-width: 480px) {
+
   #main {
     background: url(../assets/雪輪枠P.png) repeat;
     padding: 5vw;
   }
   .wrap {
-    padding-top: 10vw;
+    padding: 15vw 0;
   }
   #eyecatch h1 {
     font-size: 10vw;

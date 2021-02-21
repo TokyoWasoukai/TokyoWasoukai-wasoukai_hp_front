@@ -130,14 +130,23 @@ export default {
   font-size: 3rem;
   line-height: 5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width : 768px){
+
+  .title h1 {
+    font-size: 7vw;
+    margin-bottom: 4vw;
+  }
+
+
+}
+@media screen and (max-width: 480px) {
 
   #main {
     background: url(../assets/雪輪枠P.png) repeat;
     padding: 5vw;
   }
   .wrap {
-    padding-top: 10vw;
+    padding: 15vw 0;
   }
   .title img {
     height: 10vw;

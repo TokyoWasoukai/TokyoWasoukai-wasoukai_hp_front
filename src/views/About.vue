@@ -139,7 +139,7 @@ export default {
   margin-bottom: 4rem;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   #main {
     background: url('../assets/雪輪枠P.png');
     padding: 5vw;
