@@ -105,7 +105,7 @@ export default {
 .wrap {
   max-width: 100%;
   background: #ffffff;
-  padding: 125px 0;
+  padding: 150px 0;
   min-height: 100vh;
 }
 #eyecatch {
