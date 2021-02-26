@@ -250,6 +250,9 @@ export default {
     background-size: contain;
     vertical-align: middle;
   }
+  .about, .activty, .faq, .contact {
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
